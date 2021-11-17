@@ -1,0 +1,28 @@
+#jobs {
+  min-height: 80vh;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+#jobs .jobs-container{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  gap: 10px;
+}
+#jobs header h2 {
+  margin: 0 20px;
+}
+#jobs section h2{
+  text-align: center;
+  margin: 50px 0;
+}
+@media screen and (max-width: 890px) {
+  #jobs .jobs-container {
+    grid-template-columns: repeat(2,auto);
+  }
+}
+@media screen and (max-width: 620px) {
+  #jobs .jobs-container {
+    grid-template-columns: auto;
+  }
+}

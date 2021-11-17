@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs | Virac Lucky Supermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div>
+            <a href="index.html">Lucky</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><span class="fa fa-sm fa-home"></span> Home</a>
+                </li>
+                <li>
+                    <a href="products.html"><span class="fa fa-sm fa-shopping-cart"></span> Products</a>
+                </li>
+                <li class="active">
+                    <a href="jobs.html"><span class="fa fa-sm fa-briefcase"></span> Jobs</a>
+                </li>
+                <li>
+                    <a href="about.html"><span class="fa fa-sm fa-info-circle"></span> About</a>
+                </li>
+                <li>
+                    <a href="contact.html"><span class="fa fa-sm fa-phone-alt"></span> Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="jobs">
+        <header>
+            <h2>Jobs <span class="fa fa-briefcase"></span> </h2>
+        </header>
+        <hr>
+        <br>
+        <section class="ui centered view grid container">
+            <div>
+                <h2 style="margin: 8px 0;" class="text-red">
+                    WE ARE HIRING!
+                    <i class="fas fa-megaphone"></i>
+                </h2>
+            </div>
+            <div class="doubling four column row">
+                <div class="column">
+                    <div class="ui card">
+                        <div class="image">
+                            <img src="./assets/img/5341704.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Manager</a>
+                            <div class="meta">
+                                Manage the business.
+                            </div>
+                            <div class="description">
+                                Someone who has a good personality and hard working.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="ui button red view" type="button" data-position="0">
+                                <i class="folder icon"></i>
+                                See requirements
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui card">
+                        <div class="image">
+                            <img src="./assets/img/5341704.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Cashier</a>
+                            <div class="meta">
+                                Manage the cash register.
+                            </div>
+                            <div class="description">
+                                Someone who has a good personality and hard working.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="ui button red view" type="button" data-position="1">
+                                <i class="folder icon"></i>
+                                See requirements
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui card">
+                        <div class="image">
+                            <img src="./assets/img/5341704.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Bagger</a>
+                            <div class="meta">
+                                <span class="date">Joined in 2013</span>
+                            </div>
+                            <div class="description">
+                                Someone who has a good personality and hard working.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="ui button red view" type="button" data-position="2">
+                                <i class="folder icon"></i>
+                                See requirements
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="  column">
+                    <div class="ui card">
+                        <div class="image">
+                            <img src="./assets/img/5341704.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Seller</a>
+                            <div class="meta">
+                                <span class="date">Joined in 2013</span>
+                            </div>
+                            <div class="description">
+                                Someone who has a good personality and hard working.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="ui button red view" type="button" data-position="3">
+                                <i class="folder icon"></i>
+                                See requirements
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- modal -->
+        <div class="ui tiny  modal" id="modal">
+            <div class="header">Job requirements</div>
+            <div class="content">
+                <div class="ui list justified" id="requirement-list">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2021 Virac Lucky Supermarket</p>
+    </footer>
+
+    <!-- javascript -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function showRequirements(position) {
+            const requirements = [
+                {
+                    name: "Manager",
+                    list: [
+                        "Bachelor's degree in business, management, or related field.",
+                        "More education or experience may be preferred or required.",
+                        "Strong understanding of business management, financial, and leadership principles.",
+                        "Excellent communication, interpersonal, leadership, coaching, and conflict resolution skills."
+                    ]
+                },
+                {
+                    name: "Cashier",
+                    list: [
+                        "High school diploma or equivalent.",
+                        "Customer service or cashier experience.",
+                        "Ability to handle transactions accurately and responsibly.",
+                        "High level of energy with strong customer service skills.",
+                        "Basic math and computer skills."
+                    ]
+                },
+                {
+                    name: "Bagger",
+                    list: [
+                        "High school diploma or equivalent.",
+                        "Ability to handle transactions accurately and responsibly.",
+                        "High level of energy with strong customer service skills.",
+                        "Works organized and efficiently"
+                    ]
+                },
+                {
+                    name:"Seller",
+                    list:[
+                        "High school diploma or equivalent.",
+                        "Excellent communication skills.",
+                        "Flexible work hours.",
+                        "Basic mathematic skills.",
+                        "Prior experience in retail.",
+                        "Excellent customer service skills.",
+                        "Motivation to work through busy shifts."
+                    ]
+                }
+            ];
+            var modalContent = "";
+            const req = requirements[position];
+            for (let item of req.list) {
+                modalContent += `<li class="item"><h3><i class="check icon text-red"></i> ${item}</p></h3>`
+            }
+            $("#modal .header").html(`<i class="fa fa-info-circle text-red"></i> JOB REQUIREMENTS FOR ${req.name.toUpperCase()} `);
+            $("#requirement-list").html(modalContent)
+            $("#modal").modal("show");
+        }
+
+        $(document).on("click", ".view", function () {
+            let pos = $(this).attr("data-position");
+            showRequirements(pos);
+        })
+
+
+    </script>
+</body>
+
+</html>

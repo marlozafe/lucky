@@ -1,0 +1,137 @@
+#products #banner{
+  width: 100%;
+  height: 200px;
+  background-image: url('../img/2933.jpg_wh860.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+}
+#products .product-container {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  gap: 10px;
+  position: relative;
+}
+
+#products .product-container .product {
+  box-sizing: border-box;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#products .product-container .product:hover{
+  /* opacity: 0.8; */
+  transform: scale(1.05);
+}
+
+
+#products .product-container .product img{
+  max-width: 150px;
+  max-height: 150px;
+  display: flex;
+  margin: auto;
+}
+
+/* modal */
+#product-modal{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  background: rgba(200,200,200,0.6);
+  display: none;
+  transition: 500ms;
+}
+
+@keyframes show{
+  from{
+    transform: translateY(100px);
+  }
+}
+
+#product-modal .card{
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  animation: 500ms show ease 1;
+  transition: 500ms;
+}
+#product-modal .content{
+  box-sizing: border-box;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#product-modal img{
+  max-width: 200px;
+  max-height: 200px;
+  display: flex;
+  margin: auto;
+}
+#product-modal .close{
+  position: absolute;
+  /* right: 0; */
+  right: 10px;
+  opacity: 0.6;
+  font-size: 28px;
+  top: 0;
+  cursor: pointer;
+
+}
+#products + footer{
+  position: relative;
+  padding-top: 15px;
+}
+#products + footer button{
+  position: absolute;
+  top: -15px;
+  border-radius: 5px;
+  border: none;
+  background: var(--red);
+  color: white;
+  box-shadow: 1px 1px 2px rgb(116, 39, 39);
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+  width: max-content;
+  padding: 8px 38px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1116px) {
+    #products .product-container {
+      grid-template-columns: repeat(3,auto);
+    }
+}
+@media screen and (max-width: 890px) {
+  #products .product-container {
+    grid-template-columns: repeat(2,auto);
+  }
+}
+@media screen and (max-width: 620px) {
+  #products #banner{
+    height: 100px;
+  }
+  #products header h1 {
+    margin: 5px;
+  }
+  #products .product-container {
+    grid-template-columns: auto;
+  }
+  .product{
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,14 @@
+#contact {
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact header h1 {
+  margin: 0;
+}
