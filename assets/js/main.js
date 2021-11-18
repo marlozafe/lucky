@@ -2,8 +2,18 @@ const products = document.getElementsByClassName("product");
 const modal = document.getElementById("product-modal");
 
 
+const closeModal = () =>{
+    modal.querySelector(".card").style.transform = "scale(0.0,0.0)";
+    setTimeout(()=> {
+        modal.style.display="none";
+        modal.querySelector(".card").style.transform = "scale(1,1)";
+        },300);
+    }
+
 modal.querySelector("span.close").onclick = function(){
     modal.style.display = "none";
+    closeModal();
+    
 }
 
 /* Product onclick handler */
@@ -14,8 +24,9 @@ for (let prod of products) {
         modal.style.display = "flex";
     }
 }
+
 modal.onclick = function(){
-    modal.style.display = "none";
+    closeModal();
 }
 
 /* Back to top */
