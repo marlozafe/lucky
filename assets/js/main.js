@@ -7,7 +7,7 @@ const closeModal = () =>{
     setTimeout(()=> {
         modal.style.display="none";
         modal.querySelector(".card").style.transform = "scale(1,1)";
-        },300);
+        },300)
     }
 
 modal.querySelector("span.close").onclick = function(){
