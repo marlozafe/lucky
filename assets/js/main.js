@@ -14,6 +14,9 @@ for (let prod of products) {
         modal.style.display = "flex";
     }
 }
+modal.onclick = function(){
+    modal.style.display = "none";
+}
 
 /* Back to top */
 document.getElementById("back-to-top-btn").onclick = function(){
