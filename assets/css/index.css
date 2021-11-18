@@ -1,6 +1,7 @@
 /* fonts */
 @import url("./fonts.css");
 /* Imports */
+@impott url("https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css");
 @import url("./home.css");
 @import url("./products.css");
 @import url("./jobs.css");
@@ -68,7 +69,7 @@ header.navbar {
 }
 
 header.navbar div a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--red);
   font-weight: 500;
 }
