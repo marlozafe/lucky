@@ -1,6 +1,7 @@
 /* fonts */
 @import url("./fonts.css");
 /* Imports */
+@impott url("https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css");
 @import url("./home.css");
 @import url("./products.css");
 @import url("./jobs.css");
@@ -8,7 +9,7 @@
 @import url("./contact.css");
 @import url("./variables.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-@impott url("https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css");
+
 /* Defaults */
 body, html {
   margin: 0;
