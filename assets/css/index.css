@@ -68,7 +68,7 @@ header.navbar {
 }
 
 header.navbar div a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--red);
   font-weight: 500;
 }
