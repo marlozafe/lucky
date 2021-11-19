@@ -11,7 +11,6 @@ const closeModal = () =>{
     }
 
 modal.querySelector("span.close").onclick = function(){
-    modal.style.display = "none";
     closeModal();
     
 }
